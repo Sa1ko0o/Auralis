@@ -1,64 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auralis Portfolio</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Auralis — Разработка сайтов и Telegram-ботов</title>
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+        <div class="logo"><a href="index.html">Auralis</a></div>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">Обо мне</a>
+            <a href="services.html">Услуги</a>
+            <a href="demo.html">Демо</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+        </div>
+    </header>
 
-  <header>
-    <h1 id="logo">Auralis</h1>
-    <nav id="nav">
-      <a href="#hero">Главная</a>
-      <a href="#about">О себе</a>
-      <a href="#projects">Проекты</a>
-      <a href="#contact">Контакты</a>
-    </nav>
-    <div id="burger">
-      <span></span>
-      <span></span>
-      <span></span>
+  <main class="hero">
+    <div class="hero-content">
+      <h1>Создаю современные сайты и Telegram-ботов под ключ</h1>
+      <p>От идеи до рабочего продукта с вниманием к деталям и UX.</p>
+      <div class="buttons">
+        <a href="services.html" class="btn primary">Мои услуги</a>
+        <a href="contacts.html" class="btn secondary">Связаться</a>
+      </div>
     </div>
-  </header>
+  </main>
 
-  <section id="hero">
-    <h2>Привет, я Auralis</h2>
-    <p>Fullstack-разработчик и дизайнер интерактивных сайтов</p>
-    <button class="btn" onclick="scrollToSection('#contact')">Связаться со мной</button>
-  </section>
-
-  <section id="about">
-    <h2>О себе</h2>
-    <p>Я создаю современные веб-сайты с красивым дизайном и анимациями. Люблю интерактив и минимализм.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Проекты</h2>
-    <div class="projects">
-      <div class="card">Проект 1</div>
-      <div class="card">Проект 2</div>
-      <div class="card">Проект 3</div>
-      <div class="card">Проект 4</div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Контакты</h2>
-    <form>
-      <input type="text" placeholder="Ваше имя" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Сообщение" required></textarea>
-      <button type="submit" class="btn">Отправить</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Auralis. Все права защищены.</p>
+  <footer class="footer">
+    <p>© 2025 Auralis. Все права защищены.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>

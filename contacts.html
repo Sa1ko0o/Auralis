@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Auralis</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="index.html">Auralis</a></div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="services.html">Услуги</a>
+        <a href="demo.html">Демо</a>
+        <a href="contacts.html" class="active">Контакты</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </div>
+  </header>
+
+  <main class="contacts">
+    <div class="container">
+      <h1 class="page-title">Контакты</h1>
+      <div class="contacts-grid">
+        <!-- Форма -->
+        <form class="contact-form" id="contact-form">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="email" placeholder="Ваш email" required>
+          <textarea placeholder="Сообщение..." required></textarea>
+          <button type="submit" class="btn primary">Отправить</button>
+        </form>
+
+        <!-- Контактная информация -->
+        <div class="contact-info">
+          <h2>Наши контакты</h2>
+          <p>Email: <a href="mailto:info@auralis.com">info@auralis.com</a></p>
+          <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+
+          <div class="socials">
+            <a href="#">Discord</a>
+            <a href="#">Telegram</a>
+            <a href="#">Почта</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Уведомление -->
+      <div id="contact-notification" class="contact-notification"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Auralis. Все права защищены.</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/contacts.js"></script>
+</body>
+</html>

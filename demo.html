@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Демо — Auralis</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="index.html">Auralis</a></div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="services.html">Услуги</a>
+        <a href="demo.html" class="active">Демо</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
+    </div>
+  </header>
+
+  <main class="demo">
+    <div class="chat-demo">
+      <div class="chat-window-wrapper">
+        <div class="chat-window" id="chat-window">
+          <!-- сообщения будут вставляться сюда -->
+        </div>
+      </div>
+      <input type="text" id="chat-input" placeholder="Напиши сообщение...">
+      <button id="chat-send" class="btn primary">Отправить</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Auralis. Все права защищены.</p>
+  </footer>
+
+  <!-- Скрипты подключаются отдельно -->
+  <script src="./js/script.js"></script>
+  <script src="./js/demo-chat.js"></script>
+  <script src="./js/demo-effects.js"></script>
+</body>
+</html>

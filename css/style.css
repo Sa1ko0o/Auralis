@@ -641,18 +641,21 @@ body.light-theme .theme-toggle::before {
   transition: background 0.4s ease, color 0.4s ease;
 }
 
-@media (max-width: 900px) {
-  .container {
+@media (max-width: 480px) {
+  .buttons {
     flex-direction: column;
-    align-items: center;
     gap: 10px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 
   .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .nav a {
